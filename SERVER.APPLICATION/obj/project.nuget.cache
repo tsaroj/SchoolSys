@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "g7JRfV4wuj+YEFMPf1mj08+Ilzua6mRHi2O68iX2GDGaryZWYcBQ2jMuageFw/ETxpzTBJooG6UCBHJFxmQ8iA==",
+  "success": true,
+  "projectFilePath": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gurag\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\gurag\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\gurag\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\gurag\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\gurag\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\gurag\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\gurag\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,428 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.API\\SERVER.API.csproj": {}
+  },
+  "projects": {
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.API\\SERVER.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.API\\SERVER.API.csproj",
+        "projectName": "SERVER.API",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.API\\SERVER.API.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj"
+              },
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.INFRASTRUCTURE\\SERVER.INFRASTRUCTURE.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.INFRASTRUCTURE\\SERVER.INFRASTRUCTURE.csproj"
+              },
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.LOGGING\\SERVER.LOGGING.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.LOGGING\\SERVER.LOGGING.csproj"
+              },
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "carter": {
+              "target": "Package",
+              "version": "[8.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj",
+        "projectName": "SERVER.APPLICATION",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj"
+              },
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj",
+        "projectName": "SERVER.CORE",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.INFRASTRUCTURE\\SERVER.INFRASTRUCTURE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.INFRASTRUCTURE\\SERVER.INFRASTRUCTURE.csproj",
+        "projectName": "SERVER.INFRASTRUCTURE",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.INFRASTRUCTURE\\SERVER.INFRASTRUCTURE.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.INFRASTRUCTURE\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj"
+              },
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.LOGGING\\SERVER.LOGGING.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.LOGGING\\SERVER.LOGGING.csproj",
+        "projectName": "SERVER.LOGGING",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.LOGGING\\SERVER.LOGGING.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.LOGGING\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.APPLICATION\\SERVER.APPLICATION.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj",
+        "projectName": "SERVER.UTIL",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\SERVER.UTIL.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.UTIL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
