@@ -245,6 +245,9 @@
               },
               "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj": {
                 "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.CORE\\SERVER.CORE.csproj"
+              },
+              "F:\\SG_38\\SCHOOLSYS\\SERVER.QUERY\\SERVER.QUERY.csproj": {
+                "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.QUERY\\SERVER.QUERY.csproj"
               }
             }
           }
@@ -263,9 +266,17 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -279,9 +290,17 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.1.2, )"
             }
           },
           "imports": [
@@ -349,6 +368,61 @@
               "version": "[2.0.15, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\SG_38\\SCHOOLSYS\\SERVER.QUERY\\SERVER.QUERY.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SG_38\\SCHOOLSYS\\SERVER.QUERY\\SERVER.QUERY.csproj",
+        "projectName": "SERVER.QUERY",
+        "projectPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.QUERY\\SERVER.QUERY.csproj",
+        "packagesPath": "C:\\Users\\gurag\\.nuget\\packages\\",
+        "outputPath": "F:\\SG_38\\SCHOOLSYS\\SERVER.QUERY\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gurag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",

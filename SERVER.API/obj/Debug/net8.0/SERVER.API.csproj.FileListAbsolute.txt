@@ -86,3 +86,15 @@ F:\SG_38\SCHOOLSYS\SERVER.API\obj\Debug\net8.0\refint\SERVER.API.dll
 F:\SG_38\SCHOOLSYS\SERVER.API\obj\Debug\net8.0\SERVER.API.pdb
 F:\SG_38\SCHOOLSYS\SERVER.API\obj\Debug\net8.0\SERVER.API.genruntimeconfig.cache
 F:\SG_38\SCHOOLSYS\SERVER.API\obj\Debug\net8.0\ref\SERVER.API.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\obj\Debug\net8.0\SERVER.API.sourcelink.json
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\SERVER.QUERY.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\SERVER.QUERY.pdb
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+F:\SG_38\SCHOOLSYS\SERVER.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

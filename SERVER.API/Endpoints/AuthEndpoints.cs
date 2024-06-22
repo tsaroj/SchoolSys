@@ -21,7 +21,7 @@ namespace SERVER.API.Endpoints
             };
             Logger.Instance.Error("Saroj Guragain This is  my first Error");
 
-            return Results.Ok(ApiResponse.GO(response));
+            return Results.Ok(response.Result);
         }
     }
 }

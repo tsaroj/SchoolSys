@@ -1,4 +1,5 @@
 
+using SERVER.CORE.DTOs.Users;
 using SERVER.UTIL.Helper;
 
 namespace SERVER.APPLICATION.Services
@@ -7,7 +8,7 @@ namespace SERVER.APPLICATION.Services
     {
         Task<JsonResponse> GetAllUsers();
         Task<JsonResponse> GetUserById(int id);
-        // Task<int> AddUser(User user);
+        Task<JsonResponse> AddUser(CreateRequest user);
         // void UpdateUser(User user);
         // void DeleteUser(int id);
 

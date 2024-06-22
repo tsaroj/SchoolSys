@@ -11,31 +11,32 @@ namespace  SERVER.CORE.Entities
 
         [Required]
         [MaxLength(255)]
-        public required string FirstName { get; set; }
+        public  string FirstName { get; set; }
 
         [MaxLength(255)]
         public string? MiddleName { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public required string LastName { get; set; }
+        public  string LastName { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public required string UserName { get; set; }
+        public  string UserName { get; set; }
 
         [MaxLength(255)]
         [EmailAddress]
-        public required string Email { get; set; }
-
         [Required]
+        public  string Email { get; set; }
+
+        
         [MaxLength(255)]
         [Phone]
         public string? Phone { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public required string Password { get; set; }
+        public  string Password { get; set; }
 
         [Required]
         public int Gender { get; set; }

@@ -1,26 +1,64 @@
+using System.Text;
 using log4net.Config;
-using Carter;
-using SERVER.CORE.DTOs;
-using System.Configuration;
-
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using SERVER.INFRASTRUCTURE;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Configure Log4net.
+// Configure Log4net.
 XmlConfigurator.Configure(new FileInfo("log4net.config"));
+builder.Services.RegisterServices(builder.Configuration);
+builder.Services.AddControllers();
 
 // Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddAutoMapper(typeof(MapingConfig));
-builder.Services.RegisterServices(builder.Configuration);
+builder.Services.AddSwaggerGen(c =>{
+    c.AddSecurityDefinition("basic", new OpenApiSecurityScheme
+    {
+        Description = "api key.",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "basic"
+    });
 
-// builder.Services.AddScoped<IUserServices, UserServices>();
-// builder.Services.AddScoped<IUserRepository,UserRepository>();
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "basic"
+                },
+                In = ParameterLocation.Header
+            },
+            new List<string>()
+        }
+    });
+});
 
-builder.Services.AddCarter();
 
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+
+    };
+});
+builder.Services.AddAuthorization();
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -29,8 +67,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapCarter();
-
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+
+app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();

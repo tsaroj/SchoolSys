@@ -5,6 +5,8 @@ using Npgsql;
 using SERVER.CORE.DTOs.Users;
 using SERVER.CORE.Entities;
 using SERVER.CORE.Interface;
+using SERVER.QUERY.query;
+using BCryptNet = BCrypt.Net.BCrypt;
 
 namespace SERVER.INFRASTRUCTURE.Repositories
 {
@@ -20,10 +22,16 @@ namespace SERVER.INFRASTRUCTURE.Repositories
             _mapper = mapper;
             _connectionstring = _configuration.GetConnectionString("DbConnString");
         }
-        public Task<int> AddUser(User user)
-        {
-            throw new NotImplementedException();
-        }
+        // public async Task<int> AddUser(User user)
+        // {
+        //     using (NpgsqlConnection connection = new NpgsqlConnection(_connectionstring))
+        //     {
+        //         connection.Open();
+        //        
+        //         var data = await connection.ExecuteAsync(UserQuery.InsertUser,user);
+        //         return data;
+        //     }
+        // }
 
         public void DeleteUser(int id)
         {
@@ -50,9 +58,17 @@ namespace SERVER.INFRASTRUCTURE.Repositories
             return user;
         }
 
-        public void UpdateUser(User user)
+        public async Task<int> AddUser(CreateRequest userRequest)
         {
-            throw new NotImplementedException();
+            using (NpgsqlConnection connection = new NpgsqlConnection(_connectionstring))
+            {
+                connection.Open();
+                userRequest.Password = BCryptNet.HashPassword(userRequest.Password);
+                var user = _mapper.Map<User>(userRequest);
+                user.CreatedAt= DateTime.Now;
+                var data = await connection.ExecuteAsync(UserQuery.InsertUser,user);
+                return data;
+            }
         }
     }
 }
