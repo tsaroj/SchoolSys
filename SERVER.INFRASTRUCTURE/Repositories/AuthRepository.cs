@@ -24,6 +24,7 @@ public class AuthRepository:IAuthRepository
         {
             await connection.OpenAsync();
             var  user = await connection.QuerySingleOrDefaultAsync<User>(AuthQuery.UserByUSerName, new { UserName = login.UserName });
+            
             if (user != null)
             {
                 if (!BCryptNet.Verify(login.Password, user.Password)) {
@@ -33,9 +34,10 @@ public class AuthRepository:IAuthRepository
                 {
                     var updateLogin = new User()
                     {
+                        Id = user.Id,
                         UpdatedAt = DateTime.Now,
                         LastLogin = DateTime.Now,
-                        LoginCount = user.LoginCount + 1,
+                        LoginCount = (user.LoginCount ?? 0) + 1,
                         Otp = await GetOtp()  
                     };
                     var loginUpdates = await connection.ExecuteAsync(AuthQuery.UpdataLogin, updateLogin);

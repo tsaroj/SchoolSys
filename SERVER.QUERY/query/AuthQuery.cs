@@ -7,5 +7,5 @@ public static class AuthQuery
     //                                         where u.""UserName"" = :UserName;";
     public static string UserByUSerName => @"select * from ""Identity"".""Users"" u where u.""UserName"" = :UserName;";
     public static string UpdataLogin => @"update ""Identity"".""Users"" set ""UpdatedAt"" = @UpdatedAt,""LastLogin"" = @LastLogin,
-                                        ""LoginCount"" = @LoginCount, ""Otp"" = @Otp;";
+                                        ""LoginCount"" = @LoginCount, ""Otp"" = @Otp where ""Id""=@Id ;";
 }
